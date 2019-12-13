@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Phrasetweet.js</title>
-        
+        <link rel="stylesheet" href="main.css"> 
     </head>
     <body>
         <h1>Phrase Triangle Generator, For Tweeting</h1>
@@ -10,7 +10,9 @@
         <form id="frm1" action="">
             First phrase: <input type="text" name="firstPhrase" id="1" value="Hello, world!"><br>
             Last phrase: <input type="text" name="secondPhrase" id="2" value="Hello, dolly!"><br><br>
-            <input type="button" onclick="main()">Try it</input>
+            <input type="button" onclick="main()" id="submitButton" value="Try it!"></input>
+            <input type="button" id="resetButton" onclick="document.getElementById('result').innerHTML = ''" value = "Reset"></input>
           </form> 
+          <p id="result"></p>
     </body>
 </html>

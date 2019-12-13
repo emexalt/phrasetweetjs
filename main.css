@@ -1,0 +1,31 @@
+input[type="button"]{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+    margin: 10px 20px 10px 20px;
+}
+
+#submitButton {
+    background-color: mediumblue;
+    color: white;
+    
+}
+
+#resetButton {
+    background-color: darkred;
+    color: white;
+}
+
+
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    
+}
