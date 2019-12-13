@@ -7,15 +7,19 @@ let tfOutput = "";
 function main(){
     let phr1 = document.getElementById("1").value;
     let phr2 = document.getElementById("2").value;
-    trimLast(phr1);
-    trimFirst(phr2);
-    let output = document.getElementById("result");
-    output.innerHTML= tlOutput + tfOutput;
+    let validationResult = validate(phr1, phr2);
+    if (validationResult){
+        trimLast(phr1);
+        trimFirst(phr2);
+        let output = document.getElementById("result");
+        output.innerHTML= tlOutput + tfOutput;
+    } else {
+        let output = document.getElementById("result");
+        output.innerHTML= '<p id="errorText">First characters of strings do not match.</p>';
+    }   
     tlOutput = "";
     tfOutput = "";
-    //document.writeln(tfOutput);
-    //document.writeln('<button id="submitButton" onClick="javascript:window.location.reload(true)">Go back!</button> <link rel="stylesheet" href="main.css"></link>');
-}    
+}
 
 
 function trimLast(string){
@@ -37,4 +41,8 @@ function trimFirst(string){
             tfOutput = tfOutput.concat(string.substr(0,i), "<BR/>");
         }
     }  
+}
+
+function validate(str1, str2){
+    return str1.charAt(0) == str2.charAt(0);
 }
