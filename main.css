@@ -1,10 +1,10 @@
-input[type="button"]{
+ input[type="button"]{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 1px black;
 }
 
 input[type="text"]{
@@ -15,7 +15,7 @@ input[type="text"]{
 #submitButton {
     background-color: mediumblue;
     color: white;
-    
+   
 }
 
 #resetButton {
@@ -27,9 +27,25 @@ input[type="text"]{
 
 body {
     font-family: 'Helvetica', Arial, sans-serif;
-    
+    width: 480px;
+    align-self: center;   
+}
+
+h1 {
+    text-align: center;
+}
+
+#resultBox {
+    width: 320px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    font-family: fixed;
+    align-self: center;
+    background-color: #dddddd;
 }
 
 #errorText{
     color: red;
-}
+} 
