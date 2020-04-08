@@ -12,10 +12,10 @@ function main(){
         trimLast(phr1);
         trimFirst(phr2);
         let output = document.getElementById("result");
-        output.innerHTML= tlOutput + tfOutput;
+        output.innerText= tlOutput + tfOutput;
     } else {
         let output = document.getElementById("result");
-        output.innerHTML= '<p id="errorText">First characters of strings do not match.</p>';
+        output.innerText= '<p id="errorText">First characters of strings do not match.</p>';
     }   
     tlOutput = "";
     tfOutput = "";
@@ -27,7 +27,7 @@ function trimLast(string){
         if (string.charAt(i) == " "){
             //do nothing
         } else {
-            tlOutput = tlOutput.concat(string.substr(0,i), "<BR/>");
+            tlOutput = tlOutput.concat(string.substr(0,i), "\n");
         }
     }  
 }
@@ -38,7 +38,7 @@ function trimFirst(string){
         if (string.charAt(i) == " "){
             //do nothing
         } else {
-            tfOutput = tfOutput.concat(string.substr(0,i), "<BR/>");
+            tfOutput = tfOutput.concat(string.substr(0,i), "\n");
         }
     }  
 }
