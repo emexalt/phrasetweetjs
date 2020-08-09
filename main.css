@@ -1,51 +1,48 @@
- input[type="button"]{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    box-shadow: 2px 1px black;
+input[type="button"] {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 1px black;
 }
 
-input[type="text"]{
-    border-radius: 5px;
-    margin: 10px 20px 10px 20px;
+input[type="text"] {
+  border-radius: 5px;
+  margin: 10px 20px 10px 20px;
 }
 
 #submitButton {
-    background-color: mediumblue;
-    color: white;
-   
+  background-color: mediumblue;
+  color: white;
 }
 
 #resetButton {
-    background-color: darkred;
-    color: white;
+  background-color: darkred;
+  color: white;
 }
 
-
-
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
-    width: 480px;
-    align-self: center;   
+  font-family: "Helvetica", Arial, sans-serif;
+  width: 480px;
+  align-self: center;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #resultBox {
-    width: 320px;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 5px;
-    margin: 20px 10px;
-    font-family: fixed;
-    align-self: center;
-    background-color: #dddddd;
+  width: 320px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  margin: 20px 10px;
+  font-family: fixed;
+  align-self: center;
+  background-color: #dddddd;
 }
 
-#errorText{
-    color: red;
-} 
+#errorText {
+  color: red;
+}
